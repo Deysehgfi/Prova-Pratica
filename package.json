@@ -1,0 +1,21 @@
+{
+  "name": "pratica_cod_back_end",
+  "version": "1.0.0",
+  "description": "1. **POST /pessoas**:\r     - Descrição: Esta rota permite que os usuários se cadastrem na plataforma.\r     - Funcionalidade: Cadastro de Pessoa\r     - Método HTTP: POST\r     - Corpo da Requisição: Deve conter nome, idade e email.\r 2. **POST /pessoas/endereco/{id_pessoa}**:\r     - Descrição: Esta rota permite que os usuários cadastrem um endereço para uma pessoa específica.\r     - Funcionalidade: Cadastro de Endereço\r     - Método HTTP: POST\r     - Parâmetros da URL: ID da pessoa.\r     - Corpo da Requisição: Deve conter rua, número, cidade, estado e CEP.\r 3. **POST /pessoas/telefones/{id_pessoa}**:\r     - Descrição: Esta rota permite que os usuários cadastrem telefones para uma pessoa específica.\r     - Funcionalidade: Cadastro de Telefone\r     - Método HTTP: POST\r     - Parâmetros da URL: ID da pessoa.\r     - Corpo da Requisição: Deve conter tipo de telefone (celular, residencial, comercial) e número.\r 4. **GET /pessoas/{id_pessoa}**:\r     - Descrição: Esta rota permite visualizar as informações de uma pessoa específica.\r     - Funcionalidade: Visualização de Pessoa\r     - Método HTTP: GET\r     - Parâmetros da URL: ID da pessoa.\r     - Resposta: Nome, idade, e-mail, endereço e telefone da pessoa.\r 5. **PUT /pessoas/endereco/{id_pessoa}**:\r     - Descrição: Esta rota permite atualizar o endereço de uma pessoa específica.\r     - Funcionalidade: Atualização de Endereço\r     - Método HTTP: PUT\r     - Parâmetros da URL: ID da pessoa.\r     - Corpo da Requisição: Pode conter rua, número, cidade, estado e/ou CEP.\r 6. **DELETE /pessoas/telefones/{id_pessoa}**:\r     - Descrição: Esta rota permite deletar um telefone específico de uma pessoa.\r     - Funcionalidade: Deletar de Telefone\r     - Método HTTP: DELETE\r     - Parâmetros da URL: ID da pessoa.\r     - Corpo da Requisição: Pode conter tipo e/ou número.\r 7. **GET /pessoas**:\r     - Descrição: Esta rota permite visualizar todas as pessoas cadastradas na plataforma.\r     - Funcionalidade: Listagem de Pessoas\r     - Método HTTP: GET",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
+  }
+}
